@@ -1,6 +1,69 @@
-//https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript?fbclid=IwAR0MmwzLEt3fVfRd5e6Fjx8SycpOucTa0vEC_Sdh3wdX8Z0cldda1NkPoqE
+task 1 //https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript?fbclid=IwAR0MmwzLEt3fVfRd5e6Fjx8SycpOucTa0vEC_Sdh3wdX8Z0cldda1NkPoqE
 class SmallestIntegerFinder {
   findSmallestInt(args) {
   return Math.min(...args);
   }
 }
+
+
+
+task 3//https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript?fbclid=IwAR3_i8j4uerS2ccARx0gTGTrKjGVC-FzhheP6kdaSaYbpSda8OeQlcTwDd0
+
+function DNAtoRNA(dna) {
+return dna.replace(/T/g, 'U');
+}
+
+//function DNAtoRNA(dna) {
+//	return dna.split("T").join("U");
+//}
+
+
+//https://www.codewars.com/kata/57216d4bcdd71175d6000560?fbclid=IwAR3ePptkAUlqTfBz7yG3CF8zU3qZYk0klVoGM4J5dgh_KszUO7Li6Kf8l4M
+while (n>0) {
+  if (n % 2 == 1) {
+  str= '*' + str;
+  } else {
+  str= str + '*';
+  }
+  n--;
+  }
+  return str ;
+  }
+  
+  padIt ('hello', 1);
+  
+  // task 4 https://www.codewars.com/kata/beginner-lost-without-a-map?fbclid=IwAR34-sLbX1K2yyuYZy0C-K5gxJxdq75s-HWNWsk-CBzSILaQzY83FNanVLo 
+  
+  
+  
+  ///https://www.codewars.com/kata/5721a78c283129e416000999?fbclid=IwAR1Fs0p2VnYWZ60I2mezTYZV0ouaPdzd2iX7VZnTMTaqlYS11YY6gkB29e4
+  
+function pickIt(arr) {
+  const odd=[],even=[];
+    for (let i=0; i<arr.length; i++ ) {
+    if (arr[i] % 2 === 0) {
+    even.push(arr[i]) ; 
+    } else { 
+  odd.push (arr[i]) ;
+    } 
+  }
+  return [odd,even];
+}
+
+
+//
+  function padIt (str, n) {
+  if (n === 1) {
+  return '*' + str; 
+ } else if (n===2) {
+    return '*' + str + '*';
+ } else if (n===3) {
+    return '**' + str + '*'; 
+ } else if (n===4) {
+    return '**' + str + '**'; 
+}
+}
+
+//function padIt(str,n){
+//  while (n>0) {
+//  console.log(n, str);
