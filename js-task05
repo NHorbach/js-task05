@@ -1,0 +1,6 @@
+//https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript?fbclid=IwAR0MmwzLEt3fVfRd5e6Fjx8SycpOucTa0vEC_Sdh3wdX8Z0cldda1NkPoqE
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+  return Math.min(...args);
+  }
+}
